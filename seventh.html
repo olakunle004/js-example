@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function removeHtmlTags(html) {
+  let clean = '';
+  html = html.replace(/<.?>(.?)</.*?>/g, function(x) {
+    let tag = x[0], content = x[1];
+    if (tag !== 'p') {
+      clean += content;
+    }
+  });
+  return clean;
+}
+    </script>
+</body>
+</html>

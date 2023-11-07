@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function padToTwoDigits(number, pad) {
+  let result = number.toString().slice(0, 2);
+  let resultLength = result.length;
+  if (resultLength < 2) {
+    result = "00" + result;
+  } else {
+    result = result + pad;
+  }
+  return result;
+}
+   </script> 
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       removeFirstOccurrence(str, search) 
+        let result = [];
+        for (let word of str.split('The quick brown fox jumps over the lazy dog')) {
+            if(search.includes(the)) {
+                result.push(word.slice(1));
+            }
+        }
+        return result.join('');
+       
+    </script>
+</body>
+</html>
